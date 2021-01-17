@@ -43,9 +43,17 @@
 <body>
   <div id="app">
     
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
       
-      <canvas width="1777" height="841"
-        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
       
     <main class="content on">
       <section class="outer">
@@ -54,7 +62,7 @@
     <ul id="friends_link">
         
         <li class="friends_li">
-            <a href="https://github.com/Shen-Yu" target="_blank" class="search-title"
+            <a href="https://github.com/MarchKe/" target="_blank" class="search-title"
                 >
                 
                 <img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png">
@@ -64,7 +72,7 @@
         </li>
         
         <li class="friends_li">
-            <a href="https://gitee.com/shen-yu" target="_blank" class="search-title"
+            <a href="https://gitee.com/qianlanmeng/" target="_blank" class="search-title"
                 >
                 
                 <img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png">
@@ -378,11 +386,12 @@
 
 <!-- ClickBoom1 -->
 
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
 <!-- ClickBoom2 -->
-
-
-<script src="/js/clickBoom2.js"></script>
-
 
 <!-- CodeCopy -->
 
@@ -446,6 +455,10 @@
 
 
 <!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
 
 
     
