@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    分类 |  肆月人间
+    计算机组成和体系结构 |  肆月人间
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -57,12 +57,253 @@
       
     <main class="content on">
       <section class="outer">
+  <article
+  id="post-计算机组成和体系结构"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  计算机组成和体系结构
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%92%8C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" class="article-date">
+  <time datetime="2021-02-22T07:26:29.906Z" itemprop="datePublished">2021-02-22</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E8%80%83/">软考</a>
+  </div>
   
-    <h1 class="page-type-title">Categories</h1>
-    <div class="categories-box">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%89%E5%9B%BD%E6%97%B6%E6%9C%9F/">三国时期</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%94%90/">唐</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%8B/">宋</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E8%80%83/">软考</a><span class="category-list-count">1</span></li></ul>
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">816</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">2 min</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
   
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="计算机组成与体系结构"><a href="#计算机组成与体系结构" class="headerlink" title="计算机组成与体系结构"></a>计算机组成与体系结构</h1><h2 id="数据的表示"><a href="#数据的表示" class="headerlink" title="数据的表示"></a>数据的表示</h2><ul>
+<li><p>HEX : 十六进制        DEC:十进制         OCT: 八进制        BIN:二进制</p>
+<ul>
+<li> R进制转十进制使用的是按权展开法。</li>
+<li>十进制转R进制使用短除法：将需要转成R进制的数，除以R（例：转成2进制，除以2），进行取余，将余数从最后往第一位进行倒序拼接奇来，就是十进制的数的二进制表示。</li>
+<li>二进制转八进制与十六进制<ul>
+<li>八进制：从右往左，每三个二进制位表示一个八进制位，高位没有补零，每三个转成八进制</li>
+<li>十六进制：：从右往左，每四个二进制位表示一个十六进制位，高位没有补零，10 - 15 分别用ABCDE表示</li>
+</ul>
+</li>
+<li>原码：把一个数转成二进制的表达形式，用一个字节，8个bit位存储。最高位为符号位，0正数1负数。源码不能用来直接计算</li>
+<li>反码：正数的反码和原码一样。负数的反码，把符号位不动，其他的位原码基础上按位取反。</li>
+<li>补码：正数的补码和原码一样。</li>
+<li>移码  </li>
+<li>浮点数运算</li>
+</ul>
+</li>
+</ul>
+<h2 id="计算机结构"><a href="#计算机结构" class="headerlink" title="计算机结构"></a>计算机结构</h2><ul>
+<li>主机包括主存储器和CPU<ul>
+<li>主存储器</li>
+<li>CPU</li>
+</ul>
+</li>
+<li>CPU 包括运算器和控制器<ul>
+<li>控制器<ul>
+<li>程序计数器PC：记录下次指令的位置</li>
+<li>指令寄存器IR</li>
+<li>指令译码器</li>
+<li>时序部件</li>
+</ul>
+</li>
+<li>运算器<ul>
+<li>算术逻辑单元ALU</li>
+<li>累加寄存器AC</li>
+<li>数据缓存寄存器DR</li>
+<li>状态条件寄存器PSW：存储计算中的标志位</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Flynn分类法"><a href="#Flynn分类法" class="headerlink" title="Flynn分类法"></a>Flynn分类法</h2><ul>
+<li><p>是一种计算机体系结构的分类方法</p>
+</li>
+<li><p>单指令流单数据流SISD</p>
+<ul>
+<li>控制部分：一个</li>
+<li>处理器：一个</li>
+<li>主存模块：一个</li>
+<li>特性</li>
+<li>代表：单处理器系统</li>
+</ul>
+</li>
+<li><p>单指令流多数据流SIMD</p>
+<ul>
+<li>控制部分：一个</li>
+<li>处理器：多个</li>
+<li>主存模块：多个</li>
+<li>特性： 各处理器以异步形式处理同一条指令</li>
+<li>代表：并行处理机、阵列处理机、超级向量处理机</li>
+</ul>
+</li>
+<li><p>多指令流单数据流MISD</p>
+<ul>
+<li>控制部分：多个</li>
+<li>处理器：一个</li>
+<li>主存模块：多个</li>
+<li>特性：被证明不可靠，至少不实际</li>
+<li>代表：目前没有</li>
+</ul>
+</li>
+<li><p>多指令流多数据流MIMD</p>
+<ul>
+<li>控制部分：多个</li>
+<li>处理器：多个</li>
+<li>主存模块：多个</li>
+<li>特性：能够实现作业、任务、指令等各级全面并行</li>
+<li>代表：多处理机系统、多计算机</li>
+</ul>
+<h2 id="CISC与RISC"><a href="#CISC与RISC" class="headerlink" title="CISC与RISC"></a>CISC与RISC</h2></li>
+<li><p>CISC</p>
+<ul>
+<li>复杂，指令数量大使用频率差别大，可变长格式。支持多种寻址方式。</li>
+<li>实现方式：微程序控制技术，研制周期长</li>
+</ul>
+</li>
+<li><p>RISC</p>
+<ul>
+<li>精简，数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有Load/Store操作内存</li>
+<li>实现方式：增加通用寄存器；硬布线逻辑控制为主，适合采用流水线。优化编译，有效支持高级语言。</li>
+</ul>
+</li>
+</ul>
+<h2 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h2><ul>
+<li>概念： 取指-&gt;分析-&gt;执行</li>
+<li>流水线周期及流水线执行时间计算<ul>
+<li>理论公式：（t1+ t2 +t3…+tk）+(n-1)▲t</li>
+<li>时间公式：（k+n-1）*▲t</li>
+</ul>
+</li>
+<li></li>
+<li><ul>
+<li></li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="存储系统"><a href="#存储系统" class="headerlink" title="存储系统"></a>存储系统</h2><h2 id="总线系统"><a href="#总线系统" class="headerlink" title="总线系统"></a>总线系统</h2><h2 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h2><h2 id="校验码"><a href="#校验码" class="headerlink" title="校验码"></a>校验码</h2> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/02/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%92%8C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" rel="tag">软件设计师</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/01/15/%E5%87%BA%E5%B8%88%E8%A1%A8/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">出师表</div>
+      </a>
+    
+  </nav>
+
+  
+   
+     
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -220,6 +461,23 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
